@@ -7,7 +7,7 @@ A new brick created with the Mason CLI.
 
 ## Feature
 
-<img src="https://ask.qcloudimg.com/developer-images/article/1203298/eh209frbg8.gif" width="200px"/>
+<img src="https://github.com/bravekingzhang/flutter_template_mason/blob/main/20230317_192558.gif" width="200px"/>
 
 支持了多语言配置
 
