@@ -7,7 +7,7 @@ A new brick created with the Mason CLI.
 
 ## Feature
 
-![](https://ask.qcloudimg.com/developer-images/article/1203298/eh209frbg8.gif)
+<img src="https://ask.qcloudimg.com/developer-images/article/1203298/eh209frbg8.gif" width="200px"/>
 
 支持了多语言配置
 
