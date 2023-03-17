@@ -1,3 +1,2 @@
 # 0.1.0+1
-
-- TODO: Describe initial release.
+发布了 flutter_template_mason 第一个版本
