@@ -1,0 +1,9 @@
+name: flutter_template_hooks
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  mason: ">=0.1.0-dev.47 <0.1.0"
+
+dev_dependencies:

@@ -1,4 +1,4 @@
-# flutter_template
+# {{project_name.snakeCase()}}
 
 一个flutter的模版项目
 

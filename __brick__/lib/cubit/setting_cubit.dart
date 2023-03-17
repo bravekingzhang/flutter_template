@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/configs/color_schemes.g.dart';
+import 'package:{{project_name.snakeCase()}}/configs/color_schemes.g.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 part 'setting_state.dart';

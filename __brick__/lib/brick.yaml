@@ -1,4 +1,4 @@
-name: flutter_template_mason
+name: {{project_name.snakeCase()}}_mason
 description: A new brick created with the Mason CLI.
 
 # The following defines the brick repository url.
