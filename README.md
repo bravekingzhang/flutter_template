@@ -1,66 +1,100 @@
-# flutter_template_mason
+# Flutter Template
 
-[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
+Flutter Template 是一个高质量、易于使用的 Flutter 项目模板，旨在帮助开发者快速构建出色的跨平台应用程序。该模板采用了 Get 框架、优秀的设计模式和合理的文件结构，以确保开发者能够编写出易于维护的代码。此外，该模板还使用了 Isar 数据库，以提供卓越的性能和全平台支持。
 
-A new brick created with the Mason CLI.
+## 特点
 
+- 使用 [Get](https://pub.dev/packages/get) 框架进行状态管理、依赖注入和路由管理，简化了应用程序的开发和维护。
+- 采用模块化的设计模式，使代码结构清晰、组织良好，便于扩展和维护。
+- 使用 [Isar](https://pub.dev/packages/isar) 数据库，提供高性能、跨平台的数据存储和查询功能。
+- 优化的文件结构，使开发者能够轻松找到和管理项目中的各个部分。
+- 包含一些预构建的组件和页面，以帮助开发者快速开始构建应用程序。
+- 开箱即用，开发者只需要关注业务即可。
+- 多语言的支持。
+- 主题设置的支持。
+- 灵活扩展的设置页
 
-## Feature
+## 项目结构
 
-<img src="https://github.com/bravekingzhang/flutter_template_mason/blob/main/20230317_192558.gif" width="200px"/>
+项目中，TodoList 应用程序的结构如下所示：
 
-支持了多语言配置
+➜ lib git:(main) ✗ tree -L 2
+.
+├── components
+│ ├── add_todo_dialog.dart
+│ ├── code_wrapper.dart
+│ ├── latex.dart
+│ ├── markdown.dart
+│ └── todo_item.dart
+├── controller
+│ ├── settings.dart
+│ └── todo.dart
+├── i18n
+│ └── translations.dart
+├── main.dart
+├── models
+│ ├── todo.dart
+│ └── todo.g.dart
+├── pages
+│ ├── home.dart
+│ ├── settings.dart
+│ ├── todo_list.dart
+│ └── unknown.dart
+├── repository
+│ └── todo_repository.dart
+└── routes.dart
 
-修改配置文件，保存将自动生成多语言，维护多套语音成本非常低。
-![](https://ask.qcloudimg.com/developer-images/article/1203298/bw2rrgbh69.png?imageView2/2/w/2560/h/7000)
+components 放置了一些预构建的组件，以帮助开发者快速开始构建应用程序。
+controller 放置了一些控制器，可以参考 [Get](https://pub.dev/packages/get)。 如何写 controller，来实现全局数据管理
+repository 放置了一些数据仓库，如数据库存操作，网络操作等等，主要是处理数据的逻辑。
+pages 放置了一些页面，如首页、设置页面等，其他页面放置在此。
+i18n 放置了一些国际化资源，以帮助开发者快速构建支持国际化的语言包。
+models 放置了一些数据模型，如 Todo 模型等。
+routes.dart 定义了应用程序的路由。
+main.dart 是应用程序的入口文件，包括主题配置，多语言配置，基本不需要修改这里。
 
-支持设置主题
-![](https://ask.qcloudimg.com/developer-images/article/1203298/mce9kqe2if.png?imageView2/2/w/2560/h/7000)
+## 快速开始
 
-基于hydrated_bloc实现的动态主题管理，自动实现设置好的主题缓存，底层hive实现，比pref等性能更好。
+要开始使用 Flutter Template，请按照以下步骤操作：
 
-flutter_bloc全局数据管理
-![](https://ask.qcloudimg.com/developer-images/article/1203298/708of3kyyr.png?imageView2/2/w/2560/h/7000)
-
-一个bloc实现的简单计数器的示例，完全按照官方标准来实施。极致的实现页面和逻辑隔离，支持灵活的单元测试，组件化测试。
-
-fontawesome支持，无限免费精美icon随便使用
-![](https://ask.qcloudimg.com/developer-images/article/1203298/4rpcdp0o6k.png?imageView2/2/w/2560/h/7000)
-
-告别flutter自带icon不全的困扰。想要的icon这里可以搜索，https://fontawesome.com/icons
-
-能搜到就可以使用。
-
-
-## Getting Started 🚀
-
-```shell
-
-# 安装mason_cli
-dart pub global activate mason_cli
-
-# 创建一个文件夹，并在该文件夹下创建一个文件mason.yaml
-
-make dir ${your_project_name}
-cd ${your_project_name}
-touch mason.yaml
-
-# 写入一些配置
-bricks:
-  flutter_template_mason:
-    git:
-      url: "https://github.com/bravekingzhang/flutter_template_mason"
-      path: "."
-
-# add brick
-mason get
-
-# 基于模板生成项目
-mason make flutter_template_mason --project_name ${your_project_name}
-
+1. 克隆此仓库：
 
 ```
-其中 ${your_project_name} 替换为你项目的名字
+git clone https://github.com/bravekingzhang/flutter_template_mason.git
+```
 
+2. 进入项目目录：
 
+```
+cd flutter_template
+```
 
+3. 获取依赖项：
+
+```
+flutter pub get
+```
+
+4. 运行项目：
+
+```
+flutter run
+```
+
+现在，你已经成功运行了 Flutter Template，并可以开始构建你的应用程序。
+
+## 项目配置
+
+修改项目名字，请到项目的根目录下执行，请注意 flutter 项目命名规范，因为会体现在包名中，所以尽量取类似这样的名字 [flutter_app]
+
+```shell
+./rename_project.sh YourNewProjectName
+```
+
+## 贡献
+
+我们欢迎任何形式的贡献！如果你有任何建议、问题或需求，请随时提交 [Issue](https://github.com/bravekingzhang/flutter_template_mason/issues) 或 [Pull Request](https://github.com/your_username/flutter_template/pulls)。
+
+## 许可证
+
+本项目采用 [MIT 许可证](https://github.com/bravekingzhang/flutter_template_mason/blob/main/LICENSE)。
