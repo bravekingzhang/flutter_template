@@ -4,7 +4,7 @@ Flutter Template 是一个`高质量`、易于使用的 `Flutter 项目模板`�
 
 ## 清晰架构实现的 TODO LIST 效果
 
-<img src="https://github.com/bravekingzhang/flutter_template_mason/blob/main/artificial/demo.gif"  style="width: 50%;">
+<img src="https://github.com/bravekingzhang/flutter_template/blob/main/artificial/demo.gif"  style="width: 50%;">
 
 不要怕，非常简单，但是应有尽有，数据库持久化，全局状态管理，**因为优秀的代码组织结构，促成了非常简洁的代码就实现了一个 todo-list**
 
@@ -70,9 +70,11 @@ Flutter Template 是一个`高质量`、易于使用的 `Flutter 项目模板`�
 
 ```
 
-git clone https://github.com/bravekingzhang/flutter_template_mason.git
+git clone https://github.com/bravekingzhang/flutter_template.git
 
 ```
+
+or 直接点我的项目的 `Use this template` button，直接通过这个模板创建一个自己的项目。
 
 2. 进入项目目录：
 
@@ -110,8 +112,8 @@ flutter run
 
 ## 贡献
 
-我们欢迎任何形式的贡献！如果你有任何建议、问题或需求，请随时提交 [Issue](https://github.com/bravekingzhang/flutter_template_mason/issues) 或 [Pull Request](https://github.com/your_username/flutter_template/pulls)。
+我们欢迎任何形式的贡献！如果你有任何建议、问题或需求，请随时提交 [Issue](https://github.com/bravekingzhang/flutter_template/issues) 或 [Pull Request](https://github.com/bravekingzhang/flutter_template/pulls)。
 
 ## 许可证
 
-本项目采用 [MIT 许可证](https://github.com/bravekingzhang/flutter_template_mason/blob/main/LICENSE)。
+本项目采用 [MIT 许可证](https://github.com/bravekingzhang/flutter_template/blob/main/LICENSE)。
