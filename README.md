@@ -2,6 +2,12 @@
 
 Flutter Template 是一个高质量、易于使用的 Flutter 项目模板，旨在帮助开发者快速构建出色的跨平台应用程序。该模板采用了 Get 框架、优秀的设计模式和合理的文件结构，以确保开发者能够编写出易于维护的代码。此外，该模板还使用了 Isar 数据库，以提供卓越的性能和全平台支持。
 
+## 清晰架构实现的 TODO LIST 效果
+
+<img src="https://github.com/bravekingzhang/flutter_template_mason/blob/main/artificial/demo.gif"  style="width: 50%;">
+
+不要怕，非常简单，但是应有尽有，数据库持久化，全局状态管理，因为优秀的代码组织结果就，因此实现非常简洁
+
 ## 特点
 
 - 使用 [Get](https://pub.dev/packages/get) 框架进行状态管理、依赖注入和路由管理，简化了应用程序的开发和维护。
@@ -58,10 +64,6 @@ Flutter Template 是一个高质量、易于使用的 Flutter 项目模板，旨
 
 ## 快速开始
 
-demo 项目跑起来之后就，效果可以参考
-
-<img src="https://github.com/bravekingzhang/flutter_template_mason/blob/main/artificial/demo.gif"  style="width: 80%;">
-
 要开始使用 Flutter Template，请按照以下步骤操作：
 
 1. 克隆此仓库：
@@ -100,7 +102,7 @@ flutter run
 
 ## 项目配置
 
-修改项目名字，请到项目的根目录下执行，请注意 flutter 项目命名规范，因为会体现在包名中，所以尽量取类似这样的名字 [flutter_app]
+修改项目名字，请到项目的根目录下执行，**请注意 flutter 项目命名规范**，因为会体现在包名中，所以尽量取类似这样的名字 `flutter_app`,`todo_list`,`leetcode`
 
 ```shell
 ./rename_project.sh YourNewProjectName
