@@ -14,7 +14,7 @@ Flutter Template 是一个`高质量`、易于使用的 `Flutter 项目模板`�
 - 采用模块化的设计模式，使代码结构清晰、组织良好，便于扩展和维护。
 - 使用 [Isar](https://pub.dev/packages/isar) 数据库，提供高性能、跨平台的数据存储和查询功能。
 - 优化的文件结构，使开发者能够轻松找到和管理项目中的各个部分。
-- 轻松替换 app 的 icon
+- 轻松替换 app 的 icon。
 - 包含一些预构建的组件和页面，以帮助开发者快速开始构建应用程序。
 - 开箱即用，开发者只需要关注业务即可。
 - 多语言的支持。
@@ -107,7 +107,9 @@ flutter run
 修改项目名字，请到项目的根目录下执行，**请注意 flutter 项目命名规范**，因为会体现在包名中，所以尽量取类似这样的名字 `flutter_app`,`todo_list`,`leetcode`
 
 ```shell
-./rename_project.sh YourNewProjectName
+./rename_project.sh your_project_name
+```
+
 ```
 
 ## 贡献
@@ -117,3 +119,4 @@ flutter run
 ## 许可证
 
 本项目采用 [MIT 许可证](https://github.com/bravekingzhang/flutter_template/blob/main/LICENSE)。
+```
