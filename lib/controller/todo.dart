@@ -3,7 +3,7 @@ import 'package:flutter_template/repository/todo_repository.dart';
 import 'package:get/get.dart';
 
 class TodoController extends GetxController {
-  final ToDoRepository _toDoRepository = ToDoRepository();
+  final ToDoRepository _toDoRepository = Get.find();
 
   final todos = <Todo>[].obs;
 

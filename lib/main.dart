@@ -4,16 +4,21 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_template/controller/settings.dart';
 import 'package:flutter_template/controller/todo.dart';
 import 'package:flutter_template/i18n/translations.dart';
+import 'package:flutter_template/repository/todo_repository.dart';
 import 'package:flutter_template/routes.dart';
 import 'package:flutter_template/pages/unknown.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 void main() async {
-  await GetStorage.init();
-  // await prepareDatabase();
   WidgetsFlutterBinding.ensureInitialized();
+  await GetStorage.init();
+  await initServices();
   runApp(const MyApp());
+}
+
+initServices() async {
+  await Get.putAsync(() => ToDoRepository().init());
 }
 
 class MyApp extends StatelessWidget {

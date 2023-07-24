@@ -15,7 +15,7 @@ extension GetTodoCollection on Isar {
 
 const TodoSchema = CollectionSchema(
   name: r'Todo',
-  id: -50549,
+  id: -505491818817781703,
   properties: {
     r'completed': PropertySchema(
       id: 0,
