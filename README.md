@@ -110,8 +110,6 @@ flutter run
 ./rename_project.sh your_project_name
 ```
 
-```
-
 ## 贡献
 
 我们欢迎任何形式的贡献！如果你有任何建议、问题或需求，请随时提交 [Issue](https://github.com/bravekingzhang/flutter_template/issues) 或 [Pull Request](https://github.com/bravekingzhang/flutter_template/pulls)。
@@ -119,4 +117,7 @@ flutter run
 ## 许可证
 
 本项目采用 [MIT 许可证](https://github.com/bravekingzhang/flutter_template/blob/main/LICENSE)。
+
+```
+
 ```
