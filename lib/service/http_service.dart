@@ -12,6 +12,7 @@ class HttpService extends GetxService {
     _dio.options.connectTimeout = const Duration(milliseconds: 5000);
     _dio.options.receiveTimeout = const Duration(milliseconds: 3000);
     _dio.interceptors.add(LogInterceptor(responseBody: true));
+    // _dio.interceptors.add();其他拦截器
     return this;
   }
 
@@ -29,9 +30,9 @@ class HttpService extends GetxService {
         onReceiveProgress: onReceiveProgress,
       );
       return response;
-    } on DioException catch (e) {
+    } on DioException catch (_) {
       // 处理错误，例如自动重试
-      throw e;
+      rethrow;
     }
   }
 
@@ -53,9 +54,9 @@ class HttpService extends GetxService {
         onReceiveProgress: onReceiveProgress,
       );
       return response;
-    } on DioException catch (e) {
+    } on DioException catch (_) {
       // 处理错误，例如自动重试
-      throw e;
+      rethrow;
     }
   }
 }
