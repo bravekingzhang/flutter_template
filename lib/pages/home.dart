@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/components/user/github_user.dart';
 import 'package:flutter_template/controller/todo.dart';
 import 'package:flutter_template/pages/settings.dart';
 import 'package:flutter_template/pages/todo_list.dart';
@@ -59,19 +60,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  Text(
-                    'brzhang'.tr,
-                    style: const TextStyle(
-                      fontSize: 18,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'brzhang@example.com'.tr,
-                    style: const TextStyle(
-                      fontSize: 16,
-                    ),
-                  ),
+                  const GithubUserInfoWidget(),
                 ],
               ),
               Divider(

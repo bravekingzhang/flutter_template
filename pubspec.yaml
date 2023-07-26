@@ -45,6 +45,7 @@ dependencies:
   isar: ^3.1.0+1
   isar_flutter_libs: ^3.1.0+1
   flutter_material_pickers: ^3.6.0
+  dio: ^5.3.0
 
 dev_dependencies:
   flutter_test:
