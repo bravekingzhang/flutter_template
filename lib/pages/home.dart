@@ -45,67 +45,69 @@ class HomePage extends StatelessWidget {
       ),
       drawer: Drawer(
         elevation: 8,
-        child: Container(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'appTitle'.tr,
-                    style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  const GithubUserInfoWidget(),
-                ],
-              ),
-              Divider(
-                color: Theme.of(Get.context!).colorScheme.primary,
-                thickness: 0.5,
-              ),
-              Expanded(
-                child: ListView(
-                  padding: EdgeInsets.zero,
+        child: SafeArea(
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    ListTile(
-                      title: Text('Home'.tr),
-                      leading: const Icon(Icons.list),
-                      onTap: () {
-                        Get.back();
-                      },
+                    Text(
+                      'appTitle'.tr,
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    ListTile(
-                      title: Text('Settings'.tr),
-                      leading: const Icon(Icons.settings),
-                      onTap: () {
-                        Get.to(SettingPage());
-                      },
-                    ),
-                    ListTile(
-                      title: Text('Help'.tr),
-                      leading: const Icon(Icons.help),
-                      onTap: () {
-                        // Add your help page navigation logic here
-                      },
-                    ),
+                    const SizedBox(height: 16),
+                    const GithubUserInfoWidget(),
                   ],
                 ),
-              ),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-                child: const Text(
-                  'App Version 1.1.0',
-                  style: TextStyle(
-                    fontSize: 14,
+                Divider(
+                  color: Theme.of(Get.context!).colorScheme.primary,
+                  thickness: 0.5,
+                ),
+                Expanded(
+                  child: ListView(
+                    padding: EdgeInsets.zero,
+                    children: [
+                      ListTile(
+                        title: Text('Home'.tr),
+                        leading: const Icon(Icons.list),
+                        onTap: () {
+                          Get.back();
+                        },
+                      ),
+                      ListTile(
+                        title: Text('Settings'.tr),
+                        leading: const Icon(Icons.settings),
+                        onTap: () {
+                          Get.to(SettingPage());
+                        },
+                      ),
+                      ListTile(
+                        title: Text('Help'.tr),
+                        leading: const Icon(Icons.help),
+                        onTap: () {
+                          // Add your help page navigation logic here
+                        },
+                      ),
+                    ],
                   ),
                 ),
-              ),
-            ],
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                  child: const Text(
+                    'App Version 1.1.0',
+                    style: TextStyle(
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
