@@ -9,6 +9,7 @@ Flutter Template 是一个`高质量`、易于使用的 `Flutter 项目模板`�
 不要怕，非常简单，但是应有尽有，数据库持久化，全局状态管理，**因为优秀的代码组织结构，促成了非常简洁的代码就实现了一个 todo-list**
 
 <img src="https://github.com/bravekingzhang/flutter_template/blob/main/artificial/drawer.png"  style="width: 50%;">
+
 ## 特点
 
 - 使用 [Get](https://pub.dev/packages/get) 框架进行状态管理、依赖注入和路由管理，简化了应用程序的开发和维护。
